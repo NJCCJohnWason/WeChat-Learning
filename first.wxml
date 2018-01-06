@@ -2,3 +2,18 @@
 <text>pages/test/first.wxml</text>
 <view>{{message}}</view>
 <view wx:for="{{array}}"> {{item}}  </view>
+<view wx:if="{{view =='WEBVIEW'}}">WEBVIEW</view>
+<view wx:if="{{view =='APP'}}">APP</view>
+<view wx:if="{{view =='MINA'}}">You are watching in MINA</view>
+<template name="staffName">
+<view>
+FirstName:  {{firstName}},LastName: {{lastName}}
+</view>
+</template>
+
+<template is="staffName" data="{{...staffA}}"></template>
+<template is="staffName" data="{{...staffB}}"></template>
+<template is="staffName" data="{{...staffC}}"></template>
+<view bindtap="add">{{count}}</view>
+<view><button>Login</button></view>
+<progress percent='100' color='#123653'active='ture' stroke-width='10' show-info='ture'></progress>
