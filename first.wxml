@@ -1,0 +1,4 @@
+<!--pages/test/first.wxml-->
+<text>pages/test/first.wxml</text>
+<view>{{message}}</view>
+<view wx:for="{{array}}"> {{item}}  </view>
